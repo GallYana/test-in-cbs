@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <title>Космос. Экосистема</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo logo" href="">
+          <img
+            src="./images/logo.svg"
+            alt="Cosmos"
+            class="logo__image"
+            width="180"
+            height="38"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link p-medium__semibold">Услуги</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link p-medium__semibold"
+                >Участники</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link p-medium__semibold"
+                >Медиацентр</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__buttons hidden-mobile">
+          <ul class="header__buttons-iist">
+            <li class="header__buttons-item">
+              <div class="search">
+                <img
+                  src="./images/search.svg"
+                  alt="Search"
+                  class="search__icon"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+            <li class="header__buttons-item">
+              <a
+                href=""
+                class="header__buttons-link btn-register text-btn-small__semibold"
+              >
+                Регистрация
+              </a>
+            </li>
+            <li class="header__buttons-item">
+              <a
+                href=""
+                class="header__buttons-link btn-auth text-btn-small__medium"
+              >
+                <img
+                  src="./images/finger-print.svg"
+                  alt="finger-print"
+                  class="finger-print__icon"
+                  loading="lazy"
+                />
+                Вход
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="visible-mobile">
+          <ul class="header__buttons-iist">
+            <li class="header__buttons-item">
+              <a
+                href=""
+                class="header__buttons-link btn-auth text-btn-small__medium"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="finger-print__icon"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                >
+                  <path
+                    d="M15.9083 4.04209C14.0002 2.16314 11.358 1 8.43845 1C5.53602 1 2.90773 2.1495 1.00232 4.009"
+                    stroke="#1D1E1C"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.47717 11.0772V11.054C1.47717 7.1912 4.60853 4.05981 8.47132 4.05981"
+                    stroke="#1D1E1C"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.3645 4.68445C13.7837 5.78494 15.4657 8.22309 15.4657 11.0541V11.0593"
+                    stroke="#1D1E1C"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4.53723 14.1139V11.054C4.53723 8.88114 6.29862 7.11975 8.47143 7.11975C10.6442 7.11975 12.4056 8.88114 12.4056 11.054V14.1139"
+                    stroke="#1D1E1C"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.16028 15C7.16028 14.2492 7.16028 13.0796 7.16028 11.4911C7.16028 10.7668 7.74742 10.1797 8.47168 10.1797C9.19598 10.1797 9.78308 10.7668 9.78308 11.4911V15"
+                    stroke="#1D1E1C"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__buttons-item">
+              <div class="search">
+                <img
+                  src="./images/search.svg"
+                  alt="Search"
+                  class="search__icon"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+            <li class="header__buttons-item">
+              <div class="header__burger">
+                <span></span>
+              </div>
+            </li>
+          </ul>
+
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a class="header__logo logo" href="">
+                  <img
+                    src="./images/black-logo.svg"
+                    alt="Cosmos"
+                    class="logo__image"
+                    width="150"
+                    loading="lazy"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="" class="header__link p-large__medium">Услуги</a>
+              </li>
+              <li>
+                <a href="" class="header__link p-large__medium">Участники</a>
+              </li>
+              <li>
+                <a href="" class="header__link p-large__medium">Медиацентр</a>
+              </li>
+            </ul>
+            <ul class="m-header__buttons-iist">
+              <li class="header__buttons-item">
+                <a
+                  href=""
+                  class="header__buttons-link btn-register text-btn-small__semibold"
+                >
+                  Регистрация
+                </a>
+              </li>
+              <li class="header__buttons-item">
+                <a
+                  href=""
+                  class="header__buttons-link m-btn-auth text-btn-small__medium"
+                >
+                  <img
+                    src="./images/finger-print.svg"
+                    alt="finger-print"
+                    class="finger-print__icon"
+                    loading="lazy"
+                  />
+                  Вход
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <div class="container">
+        <div class="hero__container">
+          <div class="hero__item hero__section-0 hero-visible-mobile">
+            <div class="s2-contacts">
+              <p class="p-large__semibold">+7 (343) 123-45-67</p>
+              <p class="p-small__regular">info@kosmos.ru</p>
+              <div class="s2-social">
+                <img
+                  src="./images/m-tg.svg"
+                  alt="tg-icon"
+                  class="tg__icon"
+                  loading="lazy"
+                  width="14"
+                />
+                <img
+                  src="./images/m-vk.svg"
+                  alt="vk-icon"
+                  class="vk__icon"
+                  loading="lazy"
+                  width="20"
+                />
+                <img
+                  src="./images/m-rutube.svg"
+                  alt="rutube-icon"
+                  class="rutube__icon"
+                  loading="lazy"
+                  width="14"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__item hero__section-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="92"
+              height="92"
+              viewBox="0 0 92 93"
+              fill="none"
+              class="vector-1"
+            >
+              <path d="M92 0.167969H0V92.168H92V0.167969Z" fill="#1D1E1C" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="186"
+              height="186"
+              viewBox="0 0 186 186"
+              fill="none"
+              class="vector-2"
+            >
+              <path d="M186 186V0H0L186 186Z" fill="#1D1E1C" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="149"
+              height="149"
+              viewBox="0 0 149 149"
+              fill="none"
+              class="vector-3"
+            >
+              <path d="M0 0V149H149L0 0Z" fill="#1D1E1C" />
+            </svg>
+            <div class="hero__s1-content">
+              <div class="title-paragraph">
+                <h1>Технопарк</h1>
+                <p class="p-large__medium">
+                  Платформа по поиску и предложению услуг в
+                  научно-производственной сфере на территории Свердловской
+                  области
+                </p>
+              </div>
+              <button class="hero-btn text-btn-large__semibold">Начать</button>
+            </div>
+          </div>
+
+          <div class="hero__item hero__section-2 hero-hidden-mobile">
+            <div class="hero__s2-content">
+              <div class="s2-contacts">
+                <p class="p-large__semibold">+7 (343) 123-45-67</p>
+                <p class="p-small__regular">info@kosmos.ru</p>
+                <div class="s2-social">
+                  <img
+                    src="./images/tg.svg"
+                    alt="tg-icon"
+                    class="tg__icon"
+                    loading="lazy"
+                    width="14"
+                  />
+                  <img
+                    src="./images/vk.svg"
+                    alt="vk-icon"
+                    class="vk__icon"
+                    loading="lazy"
+                    width="20"
+                  />
+                  <img
+                    src="./images/rutube.svg"
+                    alt="rutube-icon"
+                    class="rutube__icon"
+                    loading="lazy"
+                    width="14"
+                  />
+                </div>
+              </div>
+
+              <div class="s2-spheres">
+                <div class="sphere">
+                  <img
+                    src="./images/1-sphere.svg"
+                    class="1-sphere__icon"
+                    loading="lazy"
+                    width="30"
+                  />
+                  <p class="p-sphere p-medium__semibold">электроника</p>
+                </div>
+                <div class="sphere">
+                  <img
+                    src="./images/2-sphere.svg"
+                    class="2-sphere__icon"
+                    loading="lazy"
+                    width="30"
+                  />
+                  <p class="p-sphere p-medium__semibold">микроэлектроника</p>
+                </div>
+                <div class="sphere">
+                  <img
+                    src="./images/3-sphere.svg"
+                    class="3-sphere__icon"
+                    loading="lazy"
+                    width="30"
+                  />
+                  <p class="p-sphere p-medium__semibold">робототехника</p>
+                </div>
+                <div class="sphere">
+                  <img
+                    src="./images/4-sphere.svg"
+                    class="4-sphere__icon"
+                    loading="lazy"
+                    width="30"
+                  />
+                  <p class="p-sphere p-medium__semibold">приборостроение</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stat-news__container">
+          <div class="stat-news__section-1">
+            <ul class="stat-list">
+              <li class="stat-list__item s-l__item-1">
+                <p class="p-orbitron-large orbitron">3 547</p>
+                <p class="p-large__semibold s-l__subtitle">участников</p>
+              </li>
+              <li class="stat-list__item s-l__item-2">
+                <p class="p-orbitron-large orbitron">24,8</p>
+                <p class="p-large__semibold s-l__subtitle">млрд инвестиций</p>
+              </li>
+              <li class="stat-list__item s-l__item-3">
+                <p class="p-orbitron-large orbitron">287</p>
+                <p class="p-large__semibold s-l__subtitle">партнеров</p>
+              </li>
+              <li class="stat-list__item s-l__item-4">
+                <p class="p-orbitron-large orbitron">143</p>
+                <p class="p-large__semibold s-l__subtitle">персонал</p>
+              </li>
+            </ul>
+          </div>
+          <div class="stat-news__section-2">
+            <div class="title">
+              <p class="title-h2 h2__bold">Медиацентр</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                class="path-svg"
+              >
+                <path d="M0 0H21L0 21V0Z" fill="#1D1E1C" />
+              </svg>
+            </div>
+
+            <div class="slider">
+              <div class="slider__item">
+                <div class="news-card">
+                  <img class="img" src="./images/news-1.jpg" alt="" />
+                  <span class="subtitle p-medium__semibold"
+                    >четверг, 25 июля 2024 г.</span
+                  >
+                  <p class="news-text p-medium__regular">
+                    Провели Семинар-совещание на тему: “Меры государственной
+                    поддержки бизнеса”. Рассказываем как все было в этой статье.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="news-card">
+                  <img class="img" src="./images/news-2.png" alt="" />
+                  <span class="subtitle p-medium__semibold"
+                    >вторник, 28 мая 2024 г.</span
+                  >
+                  <p class="news-text p-medium__regular">
+                    Автоматизация заводов - это будущее нашей страны. Посетили
+                    завод, занимающиейся намоткой синей веревки в красную
+                    катушку...
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="news-card">
+                  <img class="img" src="./images/news-3.jpg" alt="" />
+                  <span class="subtitle p-medium__semibold"
+                    >понедельник, 8 апреля 2024 г.</span
+                  >
+                  <p class="news-text p-medium__regular">
+                    Конвеер трудится ради блага экологии, или же ради своих
+                    личных целей? Так ли это на самом деле, выясним в нашем
+                    расследовании.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="news-card">
+                  <img class="img" src="./images/news-4.png" alt="" />
+                  <span class="subtitle p-medium__semibold"
+                    >пятница, 29 марта 2024 г.</span
+                  >
+                  <p class="news-text p-medium__regular">
+                    Старость - время честности. Достигнув преклонных лет, люди
+                    подчас брезгуют условностями и “рубят правду-матку”...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="benefits__container">
+          <div class="title">
+            <p class="title-h2 h2__bold">Преимущества экосистемы</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              class="path-svg"
+            >
+              <path d="M0 0H21L0 21V0Z" fill="#1D1E1C" />
+            </svg>
+          </div>
+
+          <div class="tabs-column hidden-mobile">
+            <div class="tabs__nav__column">
+              <button
+                class="tabs__nav__column-btn ben-tab"
+                type="button"
+                data-tab-c="#tab-c_1"
+              >
+                Условия вступления
+              </button>
+              <button
+                class="tabs__nav__column-btn ben-tab"
+                type="button"
+                data-tab-c="#tab-c_2"
+              >
+                Финансовая поддержка
+              </button>
+              <button
+                class="tabs__nav__column-btn ben-tab"
+                type="button"
+                data-tab-c="#tab-c_3"
+              >
+                Налоговые льготы
+              </button>
+              <button
+                class="tabs__nav__column-btn ben-tab"
+                type="button"
+                data-tab-c="#tab-c_4"
+              >
+                Услуги
+              </button>
+              <button
+                class="tabs__nav__column-btn ben-tab"
+                type="button"
+                data-tab-c="#tab-c_5"
+              >
+                Юридическая помощь
+              </button>
+            </div>
+            <div class="tabs-column__content">
+              <div class="tabs__c-item active-tab" id="tab-c_1">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">Условия вступления</h2>
+                  <p class="p-medium__regular">
+                    Компания «Экосистема. Космос» приглашает Вас присоединиться
+                    к нашему технопарку — уникальной платформе, предназначенной
+                    для поиска и предложения услуг в научно-производственной
+                    сфере на территории Свердловской области. Мы создаем условия
+                    для сотрудничества, инновационного развития и реализации
+                    высокотехнологичных проектов. Откройте новые горизонты
+                    возможностей вместе с нами!
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__c-item" id="tab-c_2">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">Финансовая поддержка</h2>
+                  <p class="p-medium__regular">
+                    Финансовая поддержка – это важный аспект устойчивого
+                    развития нашей компании Экосистема. Космос. Мы предлагаем
+                    широкий спектр финансовых инструментов и грантов,
+                    направленных на поддержку стартапов и инновационных проектов
+                    в научно-производственной сфере. Наша цель – создать
+                    благоприятные условия для предпринимателей и исследователей,
+                    способствуя реализации их идей и выходу на рынок.
+                    Присоединяйтесь к нам, и давайте вместе строить будущее!
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__c-item" id="tab-c_3">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">Налоговые льготы</h2>
+                  <p class="p-medium__regular">
+                    В разделе "Налоговые льготы" мы предлагаем участникам
+                    технопарка Экосистема уникальные возможности для оптимизации
+                    налоговых расходов. Компании, работающие в
+                    научно-производственной сфере на территории Свердловской
+                    области, могут воспользоваться специальными налоговыми
+                    режимами и льготами, направленными на стимулирование
+                    инновационной активности и поддержку предпринимательства.
+                    Наша цель — создать благоприятные условия для роста и
+                    развития бизнеса, чтобы Вы могли сосредоточиться на
+                    внедрении новых технологий и достижении поставленных целей.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__c-item" id="tab-c_4">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">Услуги</h2>
+                  <p class="p-medium__regular">
+                    Компания Экосистема. Космос предлагает широкий спектр услуг,
+                    направленных на поддержку научно-производственной сферы в
+                    Свердловской области. Наша платформа объединяет экспертов и
+                    организации, готовые предложить решения по разработке
+                    технологий, управлению проектами, а также консультационные
+                    услуги в области инноваций и исследования. Мы стремимся
+                    создать выгодные условия для сотрудничества, чтобы Вы могли
+                    успешно реализовать свои идеи и проекты.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__c-item" id="tab-c_5">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">Юридическая помощь</h2>
+                  <p class="p-medium__regular">
+                    Правовая (юридическая) помощь — это профессиональная
+                    деятельность юристов, направленная на содействие гражданам и
+                    юридическим лицам в решении вопросов
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-benefits__selector visible-mobile">
+            <select
+              class="custom-select"
+              id="whatever"
+              onchange="changeText(this.value);"
+            >
+              <option value="0" id="benefits-1" class="custom-option">
+                Условия вступления
+              </option>
+              <option value="1" id="benefits-2" class="custom-option">
+                Финансовая поддержка
+              </option>
+              <option value="2" id="benefits-3" class="custom-option">
+                Налоговые льготы
+              </option>
+              <option value="3" id="benefits-4" class="custom-option">
+                Услуги
+              </option>
+              <option value="4" id="benefits-5" class="custom-option">
+                Юридическая помощь
+              </option>
+            </select>
+
+            <div class="mobile_tabs-column__content">
+              <div class="mobile_tabs__c-item m_active-tab" id="tab0">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">Условия вступления</h2> -->
+                  <p class="p-medium__regular">
+                    Компания «Экосистема. Космос» приглашает Вас присоединиться
+                    к нашему технопарку — уникальной платформе, предназначенной
+                    для поиска и предложения услуг в научно-производственной
+                    сфере на территории Свердловской области. Мы создаем условия
+                    для сотрудничества, инновационного развития и реализации
+                    высокотехнологичных проектов. Откройте новые горизонты
+                    возможностей вместе с нами!
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile_tabs__c-item" id="tab1">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">Финансовая поддержка</h2> -->
+                  <p class="p-medium__regular">
+                    Финансовая поддержка – это важный аспект устойчивого
+                    развития нашей компании Экосистема. Космос. Мы предлагаем
+                    широкий спектр финансовых инструментов и грантов,
+                    направленных на поддержку стартапов и инновационных проектов
+                    в научно-производственной сфере. Наша цель – создать
+                    благоприятные условия для предпринимателей и исследователей,
+                    способствуя реализации их идей и выходу на рынок.
+                    Присоединяйтесь к нам, и давайте вместе строить будущее!
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile_tabs__c-item" id="tab2">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">Налоговые льготы</h2> -->
+                  <p class="p-medium__regular">
+                    В разделе "Налоговые льготы" мы предлагаем участникам
+                    технопарка Экосистема уникальные возможности для оптимизации
+                    налоговых расходов. Компании, работающие в
+                    научно-производственной сфере на территории Свердловской
+                    области, могут воспользоваться специальными налоговыми
+                    режимами и льготами, направленными на стимулирование
+                    инновационной активности и поддержку предпринимательства.
+                    Наша цель — создать благоприятные условия для роста и
+                    развития бизнеса, чтобы Вы могли сосредоточиться на
+                    внедрении новых технологий и достижении поставленных целей.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile_tabs__c-item" id="tab3">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">Услуги</h2> -->
+                  <p class="p-medium__regular">
+                    Компания Экосистема. Космос предлагает широкий спектр услуг,
+                    направленных на поддержку научно-производственной сферы в
+                    Свердловской области. Наша платформа объединяет экспертов и
+                    организации, готовые предложить решения по разработке
+                    технологий, управлению проектами, а также консультационные
+                    услуги в области инноваций и исследования. Мы стремимся
+                    создать выгодные условия для сотрудничества, чтобы Вы могли
+                    успешно реализовать свои идеи и проекты.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile_tabs__c-item" id="tab4">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">Юридическая помощь</h2> -->
+                  <p class="p-medium__regular">
+                    Правовая (юридическая) помощь — это профессиональная
+                    деятельность юристов, направленная на содействие гражданам и
+                    юридическим лицам в решении вопросов
+                  </p>
+                  <img
+                    class="benef-png"
+                    src="./images/picture-benef.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="infrastructure__container">
+          <div class="title">
+            <p class="title-h2 h2__bold">Инфраструктура</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              class="path-svg"
+            >
+              <path d="M0 0H21L0 21V0Z" fill="#1D1E1C" />
+            </svg>
+          </div>
+
+          <div class="tabs hidden-mobile">
+            <div class="tabs__nav">
+              <button class="tabs__nav-btn" type="button" data-tab="#tab_1">
+                Научно-исследовательские центры
+              </button>
+              <button class="tabs__nav-btn" type="button" data-tab="#tab_2">
+                Индустриальные парки в Екатеринбурге
+              </button>
+              <button class="tabs__nav-btn" type="button" data-tab="#tab_3">
+                Центры инноваций
+              </button>
+              <button class="tabs__nav-btn" type="button" data-tab="#tab_4">
+                Логистические преимущества для бизнеса
+              </button>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__item active" id="tab_1">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">Научно-исследовательские центры</h2>
+                  <p class="p-medium__regular">
+                    В Екатеринбурге развиваются современные
+                    научно-исследовательские центры, способствующие инновациям и
+                    обмину знаниями между научным сообществом и производственной
+                    сферой. Эти учреждения поддерживают стартапы и
+                    высокотехнологичные компании, предоставляя доступ к
+                    передовым технологиям и исследованиям.
+                  </p>
+                </div>
+                <img
+                  src="./images/inf-1.png"
+                  class="infras-img"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="tabs__item" id="tab_2">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">
+                    Индустриальные парки в Екатеринбурге
+                  </h2>
+                  <p class="p-medium__regular">
+                    Мы развиваем сеть индустриальных площадок на территории
+                    региона с подготовленной инженерной инфраструктурой
+                  </p>
+                </div>
+                <img
+                  src="./images/inf-2.jpg"
+                  class="infras-img"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="tabs__item" id="tab_3">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">Центры инноваций</h2>
+                  <p class="p-medium__regular">
+                    Индустриальные парки в Екатеринбурге представляют собой
+                    современные площадки, созданные для содействия инновационным
+                    процессам и развитию научно-производственных компаний. Здесь
+                    компании могут получить доступ к современным
+                    инфраструктурным решениям, мощным производственным мощностям
+                    и востребованным услугам, что способствует активному
+                    внедрению новых технологий и росту бизнеса.
+                  </p>
+                </div>
+                <img
+                  src="./images/inf-3.jpg"
+                  class="infras-img"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="tabs__item" id="tab_4">
+                <div class="inf-title-text">
+                  <h2 class="h2__semibold">
+                    Логистические преимущества для бизнеса
+                  </h2>
+                  <p class="p-medium__regular">
+                    Свердловская область является ключевым экономическим
+                    регионом России, со стратегически важными транспортными
+                    узлами и развитой логистической инфраструктурой.
+                    Индустриальные парки здесь обеспечивают удобный доступ к
+                    основным транспортным маршрутам, что делает их идеальным
+                    местом для размещения научно-производственных предприятий и
+                    открытия новых бизнес-направлений.
+                  </p>
+                </div>
+                <img
+                  src="./images/inf-4.jpg"
+                  class="infras-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-infrastructure__selector visible-mobile">
+            <select
+              class="custom-select"
+              id="whatever2"
+              onchange="changeTextInf(this.value);"
+            >
+              <option value="0" class="custom-option">
+                Научно-исследовательские центры
+              </option>
+              <option value="1" class="custom-option">
+                Индустриальные парки в Екатеринбурге
+              </option>
+              <option value="2" class="custom-option">Центры инноваций</option>
+              <option value="3" class="custom-option">
+                Логистические преимущества для бизнеса
+              </option>
+            </select>
+
+            <div class="mobile_tabs-column__content">
+              <div class="mobile_tabs__c-item m_active-tab" id="inf-tab0">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">Научно-исследовательские центры</h2> -->
+                  <p class="p-medium__regular">
+                    В Екатеринбурге развиваются современные
+                    научно-исследовательские центры, способствующие инновациям и
+                    обмину знаниями между научным сообществом и производственной
+                    сферой. Эти учреждения поддерживают стартапы и
+                    высокотехнологичные компании, предоставляя доступ к
+                    передовым технологиям и исследованиям.
+                  </p>
+                  <img
+                    src="./images/inf-1.png"
+                    class="infras-img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div class="mobile_tabs__c-item" id="inf-tab1">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">
+                    Индустриальные парки в Екатеринбурге
+                  </h2> -->
+                  <p class="p-medium__regular">
+                    Мы развиваем сеть индустриальных площадок на территории
+                    региона с подготовленной инженерной инфраструктурой
+                  </p>
+                  <img
+                    src="./images/inf-2.jpg"
+                    class="infras-img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div class="mobile_tabs__c-item" id="inf-tab2">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">Центры инноваций</h2> -->
+                  <p class="p-medium__regular">
+                    Индустриальные парки в Екатеринбурге представляют собой
+                    современные площадки, созданные для содействия инновационным
+                    процессам и развитию научно-производственных компаний. Здесь
+                    компании могут получить доступ к современным
+                    инфраструктурным решениям, мощным производственным мощностям
+                    и востребованным услугам, что способствует активному
+                    внедрению новых технологий и росту бизнеса.
+                  </p>
+                  <img
+                    src="./images/inf-3.jpg"
+                    class="infras-img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div class="mobile_tabs__c-item" id="inf-tab3">
+                <div class="inf-title-text">
+                  <!-- <h2 class="h2__semibold">
+                    Логистические преимущества для бизнеса
+                  </h2> -->
+                  <p class="p-medium__regular">
+                    Свердловская область является ключевым экономическим
+                    регионом России, со стратегически важными транспортными
+                    узлами и развитой логистической инфраструктурой.
+                    Индустриальные парки здесь обеспечивают удобный доступ к
+                    основным транспортным маршрутам, что делает их идеальным
+                    местом для размещения научно-производственных предприятий и
+                    открытия новых бизнес-направлений.
+                  </p>
+                  <img
+                    src="./images/inf-4.jpg"
+                    class="infras-img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="special-offer__container">
+          <div class="cosmos-text">
+            <img
+              src="./images/logo_2.svg"
+              alt="Cosmos-alt"
+              class="logo-2__image"
+              width="274"
+              height="54"
+              loading="lazy"
+            />
+            <p class="p-super-large__semibold">
+              Пройдите регистрацию и получите доступ к научно - промышленному
+              <br />
+              потенциалу Уральского региона.
+            </p>
+          </div>
+          <button class="offer-btn text-btn-large__semibold">
+            К регистрации
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__item footer__item-1">
+          <p class="p-medium__semibold">© 2024 Экосистема “Космос”</p>
+          <div class="footer-icons">
+            <img
+              src="./images/f-youtube.svg"
+              class="footer-icon"
+              loading="lazy"
+            />
+            <img src="./images/f-tg.svg" class="footer-icon" loading="lazy" />
+            <img src="./images/f-vk.svg" class="footer-icon" loading="lazy" />
+          </div>
+          <img
+            src="./images/corp-logo.svg"
+            alt="corp-logo"
+            class="footer-corp-logo"
+            loading="lazy"
+          />
+        </div>
+        <div class="footer__item footer__item-2 footer-left-border">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link p-medium__semibold">
+                Услуги
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link p-medium__semibold">
+                Участники
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link p-medium__semibold">
+                Медиацентр
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link p-medium__semibold">
+                Личный кабинет
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link p-medium__semibold">
+                Поиск услуг
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item-3 footer-left-border">
+          <h3>+7 (343) 123-45-67</h3>
+          <p class="p-medium__regular">+7 (912) 123 45 67</p>
+          <p class="p-medium__regular">info@kosmos.ru</p>
+        </div>
+        <div class="footer__item footer__item-4 footer-left-border">
+          <p class="p-medium__regular">Политика конфиденциальности</p>
+          <p class="p-medium__regular">Раскрытие информации</p>
+          <p class="p-medium__regular">Противодействие коррупции</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/slider.js"></script>
+  </body>
+</html>

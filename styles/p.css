@@ -1,0 +1,107 @@
+
+@media (max-width: 1400px) {
+    .header__menu-list {
+      gap: 50px;
+    }
+  
+    .header__buttons-iist {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .header {
+      padding: 20px 100px;
+    }
+  
+    .header__menu-list {
+      gap: 40px;
+    }
+  
+    .container {
+      padding: 0 70px;
+    }
+  }
+  
+  @media (max-width: 1050px) {
+    h1 {
+      font-size: 40px;
+    }
+  
+    .header {
+      padding: 20px 80px;
+    }
+  
+    .container {
+      padding: 0 50px;
+    }
+  
+    .hidden-mobile {
+      display: none;
+      opacity: 0;
+    }
+  
+    .visible-mobile {
+      display: block;
+      opacity: 100%;
+    }
+  
+    .btn-auth {
+      background-color: var(--color-green);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 15px 70px;
+    }
+  
+    .container {
+      padding: 0 40px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header {
+      padding: 15px 60px;
+    }
+  
+    .container {
+      padding: 0 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 30px;
+    }
+  
+    .logo__image {
+      width: 145px;
+      height: 30px;
+    }
+  
+    .header {
+      padding: 10px 18px;
+    }
+  
+    .header__buttons-link {
+      padding: 8px 15px;
+    }
+  
+    .finger-print__icon {
+      width: 14px;
+      height: 14px;
+    }
+  
+    .search__icon {
+      width: 23px;
+      height: 23px;
+    }
+  
+    .container {
+      padding: 0 18px;
+      margin: 0 18px;
+    }
+  }
+  
