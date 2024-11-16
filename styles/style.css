@@ -1074,4 +1074,9 @@ li {
     margin: 0 17px;
     padding: 0;
   }
+
+  .custom-select {
+    font-size: 14px;
+    padding: 15px 0 15px 7px;
+  }
 }
